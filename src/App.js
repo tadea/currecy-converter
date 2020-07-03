@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import CurrencyRow from "./CurrencyRow";
+import { FaBalanceScale } from "react-icons/fa";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
         <h1>Currency Converter</h1>
       </div>
       <CurrencyRow />
-      <div className="equals">=</div>
+      <div className="equals">
+        <FaBalanceScale />
+      </div>
       <CurrencyRow />
     </div>
   );
