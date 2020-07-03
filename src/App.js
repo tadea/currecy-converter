@@ -4,10 +4,12 @@ import CurrencyRow from "./CurrencyRow";
 
 function App() {
   return (
-    <div>
+    <>
       <h1>Currency Converter</h1>
       <CurrencyRow />
-    </div>
+      <div>=</div>
+      <CurrencyRow />
+      </>
   );
 }
 
