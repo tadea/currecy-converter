@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import CurrencyRow from "./CurrencyRow";
 import { FaBalanceScale } from "react-icons/fa";
@@ -6,6 +6,9 @@ import { FaBalanceScale } from "react-icons/fa";
 const api_call = "https://api.exchangeratesapi.io/latest";
 
 function App() {
+  const [currencyOptions, setCurrencyOptions] = useState([])
+
+
   useEffect(() => {
     fetch(api_call)
       .then((response) => response.json())
