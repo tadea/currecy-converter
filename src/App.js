@@ -22,11 +22,11 @@ function App() {
       <div className="header">
         <h1>Currency Converter</h1>
       </div>
-      <CurrencyRow />
+      <CurrencyRow currencyOptions={currencyOptions} />
       <div className="scale">
         <FaBalanceScale />
       </div>
-      <CurrencyRow />
+      <CurrencyRow currencyOptions={currencyOptions} />
     </div>
   );
 }
