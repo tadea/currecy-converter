@@ -9,7 +9,6 @@ body {
   text-align: center;
   background-color: #505562;
   color: #fff;
-  
 }
 
 h1 {
@@ -20,14 +19,14 @@ h1 {
 
 .input {
   border: 1px solid;
-  border-radius: .9em;
-  padding: .30rem;
+  border-radius: 0.9em;
+  padding: 0.3rem;
   width: 10em;
 }
 
 .header {
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .header h1 {
   margin: 0;
@@ -35,14 +34,18 @@ h1 {
 }
 
 select {
-  margin-left: .5rem;
-  padding: .2rem;
-  border-radius: .9em;
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+  border-radius: 0.9em;
 }
 
 .equals {
   font-weight: bold;
   font-size: 2rem;
+  padding: 0.5em;
+  padding-right: 2em;
+  /* height: 1em;
+  width: 1em; */
 }
 
 /* .container {
@@ -52,5 +55,3 @@ select {
   overflow-x: hidden;
   position: relative;
 }  */
-
-
