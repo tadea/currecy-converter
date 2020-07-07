@@ -34,6 +34,14 @@ function App() {
       });
   }, []);
 
+  useEffect(() => {
+    if (fromCurrency != null && toCurrency != null) {
+      fetch(`${api_call}?base=${fromCurrency}&symbols=${toCurrency}`)
+        .then((response) => response.json())
+        .then((data) => setExchangeRate(data.rates[toCurrency]));
+    }
+  }, [fromCurrency, toCurrency]);
+
   function handleFromAmountChange(e) {
     setAmount(e.target.value);
     setAmountInFromCurrency(true);
