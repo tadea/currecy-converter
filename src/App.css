@@ -2,23 +2,24 @@
 
 body {
   margin: 0;
-  display: flex;
+
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  background-color: #505562;
-  color: #fff;
+  background-color: #ffffff;
+  color: rgb(14, 14, 14);
 }
 
 h1 {
   font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   margin: 0rem;
   margin-bottom: 1.5rem;
 }
 
 .input {
-  border: 1px solid;
+  border: 1.3px solid;
   border-radius: 0.9em;
   padding: 0.3rem;
   width: 10em;
@@ -44,15 +45,5 @@ select {
   font-size: 2rem;
   padding: 0.5em;
   padding-right: 2em;
-  color: yellow;
-  /* height: 1em;
-  width: 1em; */
+  color: rgb(255, 102, 0);
 }
-
-/* .container {
-  width: 500px;
-  margin: 20px auto;
-  user-select: none;
-  overflow-x: hidden;
-  position: relative;
-}  */

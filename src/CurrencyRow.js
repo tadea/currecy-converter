@@ -5,8 +5,8 @@ export default function CurrencyRow(props) {
     currencyOptions,
     selectedCurrency,
     onChangeCurrency,
-    amount,
     onChangeAmount,
+    amount,
   } = props;
   return (
     <div>

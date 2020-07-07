@@ -54,6 +54,11 @@ function App() {
 
   return (
     <div className="container">
+      <img
+        src="https://i.postimg.cc/mhfySyZx/currency.png"
+        border="0"
+        alt="currency"
+      />
       <div className="header">
         <h1>Currency Converter</h1>
       </div>
@@ -61,8 +66,8 @@ function App() {
         currencyOptions={currencyOptions}
         selectedCurrency={fromCurrency}
         onChangeCurrency={(e) => setFromCurrency(e.target.value)}
-        amount={fromAmount}
         onChangeAmount={handleFromAmountChange}
+        amount={fromAmount}
       />
       <div className="scale">
         <FaBalanceScale />
@@ -71,8 +76,8 @@ function App() {
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
         onChangeCurrency={(e) => setToCurrency(e.target.value)}
-        amount={toAmount}
         onChangeAmount={handleToAmountChange}
+        amount={toAmount}
       />
     </div>
   );
