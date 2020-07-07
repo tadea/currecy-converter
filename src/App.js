@@ -9,6 +9,10 @@ function App() {
   const [currencyOptions, setCurrencyOptions] = useState([]);
   const [fromCurrency, setFromCurrency] = useState();
   const [toCurrency, setToCurrency] = useState();
+  const [exchangeRate, setExchangeRate] = useState();
+  const [amount, setAmount] = useState(1);
+  const [amountInFromCurrency, setAmountInFromCurrency] = useState(true);
+  console.log(exchangeRate);
 
   useEffect(() => {
     fetch(api_call)
@@ -18,6 +22,7 @@ function App() {
         setCurrencyOptions([data.base, ...Object.keys(data.rates)]);
         setFromCurrency(data.base);
         setToCurrency(firstCurrency);
+        setExchangeRate(data.rates[firstCurrency]);
       });
   }, []);
 
