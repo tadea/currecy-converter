@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import CurrencyRow from "./CurrencyRow";
 import { FaBalanceScale } from "react-icons/fa";
 
+const api_call = "https://api.exchangeratesapi.io/latest";
+
 function App() {
+  useEffect(() => {
+    fetch(api_call)
+      .then((response) => response.json())
+      .then((data) => console.log(data));
+  }, []);
   return (
     <div className="container">
       <div className="header">
